@@ -50,10 +50,10 @@ All the transformations were made in the script [run_analysis.R](https://github.
 	- Substitute patterns with the custom `descriptive_names()` function. See the function for more details.
 	- Exports the "tidy_data_set" data to [output/tidy_data.csv](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/blob/master/output/tidy_data.csv)
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-	- Exports the "average_data_set" data to [output/average_tidy_data.csv](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/blob/master/output/average_tidy_data.csv)
+	- Exports the "average_data_set" data to [output/average_tidy_data.csv](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/blob/master/output/average_tidy_data.csv) and [output/average_tidy_data.txt](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/blob/master/output/average_tidy_data.txt)
 
 ## Output data
-All the exported data are contained in the [output folder](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/tree/master/output) in "csv" format.
+All the exported data are contained in the [output folder](https://github.com/fernandohsmacedo/coursera-get-cleaning-data-project/tree/master/output) in "csv" format. There's also a "txt" of the final step data for upload in Coursera.
   
 Outuput of `str()` function:
 - __tidy_data_set__

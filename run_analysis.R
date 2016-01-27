@@ -119,3 +119,5 @@ average_data_set <- tidy_data_set %>%
     summarize_each(funs(mean))
 write.csv(as.data.frame(average_data_set),
           file = "./output/average_tidy_data.csv", row.names = FALSE)
+write.table(as.data.frame(average_data_set),
+            file = "./output/average_tidy_data.txt", row.names = FALSE)

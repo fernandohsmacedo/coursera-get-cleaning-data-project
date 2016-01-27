@@ -35,6 +35,7 @@ Common problems on a messy data:
 .
 +-- _output
 |   +-- average_tidy_data.csv
+|   +-- average_tidy_data.txt
 |   +-- tidy_data.csv
 +-- _.gitignore
 +-- _CodeBook.md
@@ -42,7 +43,7 @@ Common problems on a messy data:
 +-- _run_analysis.R
 ```
   
-- output/ -> Folder containing the output in "csv" format. See CodeBook.md for more details.
+- output/ -> Folder containing the output in "csv" and "txt" formats. See CodeBook.md for more details.
 - .gitignore -> Instrucions for ignoring files on commits.
 - CodeBook.md -> A code book that describes the variables, the data, and any transformations or work performed to clean up the data.
 - README.md -> This file.
