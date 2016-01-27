@@ -14,7 +14,6 @@
 
 # Libraries
 library(dplyr)
-library(tidyr)
 
 # Download the data sets if they don't exist
 if(!dir.exists("UCI HAR Dataset")) {
@@ -50,11 +49,12 @@ test_set$type <- "test"
 
 # Merge both datasets
 train_test_set <- bind_rows(train_set, test_set)
+train_test_set$type <- as.factor(train_test_set$type)
 
 # Set column names with the values on features data
 names(train_test_set)[-562] <- as.character(features$V2)
 
-# Merge train and test activities, name them and label the column
+# Merge train and test activities, name then and label the column
 train_test_labels <- train_labels %>% 
     bind_rows(test_labels)
 names(train_test_labels) <- "activity_index"
